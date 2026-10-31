@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Синапс. Практические курсы по нейросетям</title>
+  <meta name="description" content="Курсы по ChatGPT, Claude и Midjourney: от первого промпта до автоматизации рутины. Практика на реальных рабочих задачах.">
+  <meta name="theme-color" content="#F5F5F2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='20' fill='%230C0C0D'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#content">Перейти к содержимому</a>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="logo" href="#top" aria-label="Синапс, на главную">синапс.</a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a class="nav-link" href="#courses">Курсы</a>
+        <a class="nav-link" href="#program">Программа</a>
+        <a class="nav-link" href="#reviews">Отзывы</a>
+        <a class="nav-link" href="#faq">Вопросы</a>
+      </nav>
+      <a class="btn btn-dark btn-sm" href="#courses">Выбрать курс</a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a class="mobile-link" href="#courses">Курсы</a>
+    <a class="mobile-link" href="#program">Программа</a>
+    <a class="mobile-link" href="#reviews">Отзывы</a>
+    <a class="mobile-link" href="#faq">Вопросы</a>
+    <a class="btn btn-dark mobile-cta" href="#courses">Выбрать курс</a>
+  </div>
+
+  <main id="content">
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="eyebrow-chip reveal"><i class="ph ph-sparkle" aria-hidden="true"></i>Практические курсы по нейросетям</p>
+        <h1 class="hero-title reveal">Нейросети уже работают.<br><span class="hero-title-dim">Научитесь ими управлять.</span></h1>
+        <div class="hero-row">
+          <div class="hero-copy">
+            <p class="hero-sub reveal">От первого промпта до автоматизации рутины: ChatGPT, Claude, Midjourney и агенты на реальных рабочих задачах.</p>
+            <div class="hero-cta reveal">
+              <a class="btn btn-dark" href="#courses">Выбрать курс <i class="ph ph-arrow-right" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost" href="#program">Смотреть программу</a>
+            </div>
+          </div>
+          <div class="hero-visual fade-in">
+            <div class="hero-img-wrap" data-parallax="0.05">
+              <img class="img-bw" src="https://picsum.photos/seed/sinaps-hero-studio/900/900" alt="Чёрно-белая фотография: работа за ноутбуком" width="900" height="900" fetchpriority="high">
+            </div>
+            <!-- mock -->
+            <div class="hero-badge reveal">
+              <span class="hero-badge-num">9,8</span>
+              <span class="hero-badge-text">средняя оценка курса из 10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= MARQUEE ======================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">Промптинг</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Автоматизация</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Генерация текста</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Анализ данных</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Изображения</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">ИИ-агенты</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Планы и таски</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Поиск и сводки</span><i class="ph ph-asterisk"></i>
+        </div>
+        <div class="marquee-group">
+          <span class="marquee-item">Промптинг</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Автоматизация</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Генерация текста</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Анализ данных</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Изображения</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">ИИ-агенты</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Планы и таски</span><i class="ph ph-asterisk"></i>
+          <span class="marquee-item">Поиск и сводки</span><i class="ph ph-asterisk"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================= STATS ======================= -->
+    <section class="stats section">
+      <div class="container">
+        <p class="eyebrow-text reveal">Школа в цифрах</p>
+        <div class="stats-grid" data-stagger>
+          <!-- Цифры для демо, заменить на реальные -->
+          <div class="stat reveal">
+            <div class="stat-num"><span data-count="4800">4 800</span></div>
+            <p class="stat-label">выпускников с 2023 года</p>
+          </div>
+          <div class="stat reveal">
+            <div class="stat-num"><span data-count="87">87</span><span class="stat-suffix">%</span></div>
+            <p class="stat-label">применяют нейросети каждый день</p>
+          </div>
+          <div class="stat reveal">
+            <div class="stat-num"><span data-count="12">12</span></div>
+            <p class="stat-label">практик в портфолио после курса</p>
+          </div>
+          <div class="stat reveal">
+            <div class="stat-num"><span data-count="9.8" data-decimals="1">9,8</span></div>
+            <p class="stat-label">средняя оценка курса из 10</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= STATEMENT ======================= -->
+    <section class="statement">
+      <div class="deco-circle" data-parallax="-0.07" aria-hidden="true"></div>
+      <div class="container">
+        <p class="statement-text">Мы не читаем лекции ради лекций. После каждого урока у вас остаётся готовый промпт, шаблон или процесс, который вы примените на своей задаче уже завтра утром.</p>
+      </div>
+    </section>
+
+    <!-- ======================= COURSES ======================= -->
+    <section class="courses section-alt section" id="courses">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="reveal">Три формата. Один результат.</h2>
+          <p class="section-sub reveal">От первого знакомства с нейросетями до внедрения в процессы команды. Выберите глубину, остальное сделаем вместе.</p>
+        </div>
+
+        <div class="courses-grid">
+          <!-- Флагман -->
+          <article class="course course-flagship reveal">
+            <div class="flagship-grid">
+              <div class="flagship-main">
+                <div class="course-top">
+                  <span class="chip chip-light">Флагман</span>
+                  <span class="mono-label mono-label-dark">8 недель, 42 урока</span>
+                </div>
+                <h3 class="course-title">Поток</h3>
+                <p class="course-for">Для тех, кто хочет срезать рутину и делегировать повторяемое нейросетям.</p>
+                <ul class="course-list">
+                  <li><i class="ph ph-check" aria-hidden="true"></i>Промпт-паттерны и личная библиотека промптов</li>
+                  <li><i class="ph ph-check" aria-hidden="true"></i>ИИ-агенты и автоматизация без кода</li>
+                  <li><i class="ph ph-check" aria-hidden="true"></i>Живые разборы и куратор в чате</li>
+                </ul>
+              </div>
+              <div class="flagship-side">
+                <ul class="fact-list">
+                  <li><i class="ph ph-check" aria-hidden="true"></i>6 живых разборов</li>
+                  <li><i class="ph ph-check" aria-hidden="true"></i>чат с куратором</li>
+                  <li><i class="ph ph-check" aria-hidden="true"></i>доступ навсегда</li>
+                </ul>
+                <div class="course-foot">
+                  <div class="course-price">
+                    <span class="price-num">24 900 ₽</span>
+                    <span class="price-note">или 6 × 4 150 ₽</span>
+                  </div>
+                  <a class="btn btn-light" href="#start">Записаться на «Поток»</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Старт -->
+          <article class="course reveal">
+            <div class="course-media">
+              <img class="img-bw" src="https://picsum.photos/seed/sinaps-course-start/800/500" alt="Чёрно-белая фотография: рабочее место с ноутбуком" width="800" height="500" loading="lazy">
+            </div>
+            <div class="course-top">
+              <span class="mono-label">4 недели, 16 уроков</span>
+            </div>
+            <h3 class="course-title">Старт</h3>
+            <p class="course-for">Для тех, кто ещё не открывал ChatGPT или открыл и закрыл.</p>
+            <ul class="course-list">
+              <li><i class="ph ph-check" aria-hidden="true"></i>Пишем промпты под конкретные задачи</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Генерируем тексты, изображения, таблицы</li>
+            </ul>
+            <div class="course-foot">
+              <div class="course-price">
+                <span class="price-num">9 900 ₽</span>
+                <span class="price-note">первый урок бесплатно</span>
+              </div>
+              <a class="btn btn-dark" href="#start">Записаться на «Старт»</a>
+            </div>
+          </article>
+
+          <!-- Команда -->
+          <article class="course reveal">
+            <div class="course-media">
+              <img class="img-bw" src="https://picsum.photos/seed/sinaps-course-team/800/500" alt="Чёрно-белая фотография: команда на воркшопе" width="800" height="500" loading="lazy">
+            </div>
+            <div class="course-top">
+              <span class="mono-label">формат под вашу задачу</span>
+            </div>
+            <h3 class="course-title">Команда</h3>
+            <p class="course-for">Для отделов и компаний от пяти человек.</p>
+            <ul class="course-list">
+              <li><i class="ph ph-check" aria-hidden="true"></i>Аудит процессов и карта задач под ИИ</li>
+              <li><i class="ph ph-check" aria-hidden="true"></i>Воркшопы для команды и пилот за две недели</li>
+            </ul>
+            <div class="course-foot">
+              <div class="course-price">
+                <span class="price-num price-num-sm">По запросу</span>
+                <span class="price-note">счёт и договор</span>
+              </div>
+              <a class="btn btn-ghost" href="mailto:hello@sinaps.school">Обсудить программу</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= STEPS ======================= -->
+    <section class="steps section" id="program">
+      <div class="container steps-grid">
+        <div class="steps-side">
+          <p class="eyebrow-text reveal">Как проходит обучение</p>
+          <h2 class="reveal">Смотрите меньше, делайте больше</h2>
+          <p class="section-sub reveal">Формат рассчитан на занятых людей: короткие уроки, практика на ваших задачах и живая обратная связь.</p>
+          <figure class="steps-photo fade-in">
+            <img class="img-bw" src="https://picsum.photos/seed/sinaps-practice-desk/960/720" alt="Чёрно-белая фотография: рабочий стол с конспектами" width="960" height="720" loading="lazy">
+          </figure>
+        </div>
+        <div class="steps-list">
+          <div class="steps-line" aria-hidden="true"><span class="steps-progress-fill"></span></div>
+          <ol>
+            <li class="step reveal">
+              <span class="step-dot" aria-hidden="true"></span>
+              <h3>Смотрите короткие уроки</h3>
+              <p>Видео по семь-двенадцать минут без воды, новый модуль открывается каждый день.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-dot" aria-hidden="true"></span>
+              <h3>Сразу практикуетесь</h3>
+              <p>Каждый урок заканчивается заданием на вашей рабочей задаче, а не на абстрактном примере.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-dot" aria-hidden="true"></span>
+              <h3>Собираете библиотеку</h3>
+              <p>Промпты, шаблоны и чек-листы остаются у вас: к концу курса это личный набор инструментов.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-dot" aria-hidden="true"></span>
+              <h3>Получаете разбор</h3>
+              <p>Куратор проверяет практики и отвечает в чате, раз в неделю живой созвон с группой.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= REVIEWS ======================= -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <h2 class="reveal">Что говорят выпускники</h2>
+        <div class="reviews-grid" data-stagger>
+          <figure class="quote quote-big reveal">
+            <blockquote>«Раньше на отчёт уходил день. Теперь сорок минут, Claude и кофе. Курс окупился за первую неделю.»</blockquote>
+            <figcaption>
+              <span class="quote-name">Марина Ковалёва</span>
+              <span class="quote-role">руководитель аналитики, «Дельта-Логистик»</span>
+            </figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>«Заходила за ChatGPT, вышла с автоматизированным порталом заявок. Не ожидала такого от себя, честно.»</blockquote>
+            <figcaption>
+              <span class="quote-name">Ольга Резвых</span>
+              <span class="quote-role">продюсер онлайн-школы</span>
+            </figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>«Внедрили нейросети в отдел из двенадцати человек. Сэкономили около тридцати часов в неделю на рутине.»</blockquote>
+            <figcaption>
+              <span class="quote-name">Тимур Асхабов</span>
+              <span class="quote-role">операционный директор, «Строймонтаж-Юг»</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= FAQ ======================= -->
+    <section class="faq section" id="faq">
+      <div class="container">
+        <h2 class="reveal">Частые вопросы</h2>
+        <div class="faq-list" data-stagger>
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span>Я совсем новичок. Потяну?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                <p>Да. Курс «Старт» начинается с установки приложений и первых промптов. Технический бэкграунд не нужен: всё показываем на практике.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span>Сколько времени нужно в неделю?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                <p>Около четырёх часов: два-три коротких урока и практика. Доступ к материалам остаётся навсегда, темп можно подстроить под себя.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span>Какие нейросети разберём?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                <p>ChatGPT, Claude, Gemini, Midjourney и DALL-E. Плюс сервисы автоматизации: Make, Zapier и конструкторы собственных GPT-агентов.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span>А если курс не подойдёт?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                <p>Вернём деньги в течение четырнадцати дней после старта, без объяснения причин.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" type="button" aria-expanded="false">
+              <span>Можно ли оплатить от компании?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-a">
+              <div class="faq-a-inner">
+                <p>Да, оформим счёт и закрывающие документы. Напишите на почту, и подготовим договор.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CTA ======================= -->
+    <section class="cta section" id="start">
+      <div class="container">
+        <div class="cta-window reveal">
+          <div class="deco-circle deco-circle-light" data-parallax="0.06" aria-hidden="true"></div>
+          <div class="cta-copy">
+            <h2>Первый урок бесплатно</h2>
+            <p>Пришлём вводный модуль курса «Старт» и библиотеку из двадцати готовых промптов.</p>
+          </div>
+          <div class="cta-form-wrap">
+            <form class="cta-form" novalidate>
+              <label class="form-label" for="email">Электронная почта</label>
+              <div class="cta-row">
+                <input id="email" type="email" name="email" placeholder="you@company.ru" autocomplete="email" required>
+                <button class="btn btn-light" type="submit"><span class="btn-label">Получить урок</span> <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i></button>
+              </div>
+              <p class="cta-note" role="status">Без спама, отписка в один клик.</p>
+            </form>
+            <div class="cta-success" hidden>
+              <i class="ph ph-check-circle" aria-hidden="true"></i>
+              <div>
+                <p class="cta-success-title">Готово, письмо уже в пути</p>
+                <p class="cta-success-text">Проверьте почту в течение пары минут. Если письма нет, загляните в папку «Промоакции».</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#top">синапс.</a>
+        <p>Практические курсы по нейросетям для тех, кто работает, а не просто смотрит.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Разделы сайта">
+        <a href="#courses">Курсы</a>
+        <a href="#program">Программа</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <div class="footer-contact">
+        <!-- Контакты для демо, заменить на реальные -->
+        <a href="mailto:hello@sinaps.school">hello@sinaps.school</a>
+        <a href="https://t.me/sinaps_school" rel="noopener">@sinaps_school</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Школа «Синапс»</span>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+</body>
+</html>
