@@ -1445,30 +1445,41 @@ html:not(.js) .faq-icon {
   }
 }
 
-/* ---------- Бейдж ChatGPT ---------- */
+/* ---------- Фоновый знак ChatGPT в hero ---------- */
 
-.ai-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 38px;
-  height: 38px;
-  flex: none;
-  border-radius: var(--r-pill);
-  border: 1px solid var(--line);
-  background: var(--card);
+.hero {
+  position: relative;
+}
+
+.hero-openai {
+  position: absolute;
+  top: 50%;
+  right: -170px;
+  width: 620px;
+  max-width: 75vw;
+  transform: translateY(-50%) rotate(-10deg);
   color: var(--ink);
-  transition:
-    transform 0.35s var(--ease),
-    background 0.35s var(--ease);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
 }
 
-.ai-badge svg {
-  width: 17px;
-  height: 17px;
+.hero-openai svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.ai-badge:hover {
-  transform: translateY(-2px) rotate(10deg);
-  background: var(--paper-2);
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 960px) {
+  .hero-openai {
+    width: 380px;
+    right: -110px;
+    top: 38%;
+    opacity: 0.045;
+  }
 }
